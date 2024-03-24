@@ -18,12 +18,12 @@ struct Carro{
 	int precioCompra;
 };
 
-Carro carrosComprados[1001];
+Carro carrosComprados[1001]; //Cantidad de carros 
 Carro carrosVendidos[1001]; 
 int totalCarrosComprados = 0;
 int totalCarrosVendidos = 0;
 
-// Función para mostrar los carros comprados
+// FunciÃ³n para mostrar los carros comprados
 void mostrarCarrosComprados(){
     cout<<"\n--- Carros Comprados ---"<<endl;
     for (int i = 0; i < totalCarrosComprados; i++){
@@ -31,7 +31,7 @@ void mostrarCarrosComprados(){
     }
 }
 
-// Función para mostrar los carros vendidos
+// FunciÃ³n para mostrar los carros vendidos
 void mostrarCarrosVendidos(){
     cout<<"\n--- Carros Vendidos ---"<<endl;
     for (int i = 0; i < totalCarrosVendidos; i++) {
@@ -39,7 +39,7 @@ void mostrarCarrosVendidos(){
     }
 }
 
-// Función para mostrar los carros comprados o vendidos a un cliente
+// FunciÃ³n para mostrar los carros comprados o vendidos a un cliente
 void mostrarCarrosCliente(){
     string cliente;
     cout<<"Ingrese el nombre del cliente: ";
@@ -60,7 +60,7 @@ void mostrarCarrosCliente(){
     }
 }
 
-// Función para agregar información de un carro comprado
+// FunciÃ³n para agregar informaciÃ³n de un carro comprado
 void agregarCarroComprado(){
     cout<<"\n--- Agregar Carro Comprado ---"<<endl;
     Carro nuevoCarro;
@@ -76,7 +76,7 @@ void agregarCarroComprado(){
     totalCarrosComprados++;
 }
 
-// Función para modificar la información de un carro vendido
+// FunciÃ³n para modificar la informaciÃ³n de un carro vendido
 void modificarCarroVendido() {
     string model;
     cout<<"Ingrese el modelo del carro vendido: ";
@@ -94,7 +94,7 @@ void modificarCarroVendido() {
     }
 }
 
-// Función para eliminar datos de un carro o cliente
+// FunciÃ³n para eliminar datos de un carro o cliente
 void eliminarDatosCarroCliente() {
     string model;
     cout<<"Ingrese el modelo del carro a eliminar: ";
@@ -107,7 +107,7 @@ void eliminarDatosCarroCliente() {
     }
 }
 
-// Función para mostrar pérdidas o ganancias en la compra y venta de un carro
+// FunciÃ³n para mostrar pÃ©rdidas o ganancias en la compra y venta de un carro
 void mostrarPerdidasGanancias() {
     int perdidas = 0;
     int ganancias = 0;
@@ -125,7 +125,7 @@ void mostrarPerdidasGanancias() {
     cout<<"Ganancias totales: " << ganancias<<endl;
 }
 
-// Función para mostrar el menú
+// FunciÃ³n para mostrar el menÃº
 void mostrarMenu() {
     cout<<"\n--- Menu ---"<<endl;
     cout<<"1. Mostrar carros comprados"<<endl;
@@ -189,7 +189,7 @@ do {
                 break;
 
             default:
-                cout<<"Opción no valida. Por favor, ingrese una opción valida."<<endl;
+                cout<<"OpciÃ³n no valida. Por favor, ingrese una opciÃ³n valida."<<endl;
                 break;
         }
 
