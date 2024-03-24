@@ -139,10 +139,11 @@ void mostrarMenu() {
 }
 
 int main(){
-	ifstream file1("cars_data.csv");
-    ifstream file2("clients.csv");
+	//Lectura de archivos
+	ifstream file1("cars_data.csv"); 
+	ifstream file2("clients.csv"); 
     
-    if (!file1.is_open()||!file2.is_open()){
+    if (!file1.is_open()||!file2.is_open()){ 
         cout<<"No se pudieron abrir los archivos"<<endl;
         return 1;
     }
